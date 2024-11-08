@@ -121,6 +121,13 @@ ul {
     text-transform: uppercase;
 }
 
+.accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+    color: inherit;
+    outline: none;
+    
+  }
+
 #user-navigation{
     margin-left: 2em !important;
     justify-content: flex-end;
@@ -392,6 +399,35 @@ ul {
 
 /* ---------------END--------------- */
 
+/*Product Card CSS*/
+/* ---------------START--------------- */
+.product-card{
+    text-decoration: none;
+}
+
+.product-card .card-body{
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+.product-btn{
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    border: 1px #821131;
+    background-color: #821131;
+    min-width: 30px;
+    
+}
+
+.card-text{
+    font-size: 20px;
+}
+
+/* ---------------END--------------- */
 
 /* PRIVACY POLICY */ 
 
@@ -432,3 +468,4 @@ ul {
     margin-right: 15px;
     margin-bottom: 1%;
 }
+
