@@ -18,7 +18,7 @@
 
     <nav class="navbar sticky-top navbar-expand-lg ">
 
-      <div class="container ">
+      <div class="container">
 
         <div class="collapse navbar-collapse" id="main-navigation">
           
@@ -154,8 +154,7 @@
       </div>
     
     </nav>
-
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
 
       <div class="offcanvas-header">
 
@@ -177,7 +176,7 @@
 
             <h2 class="accordion-header">
 
-              <a class="accordion-link d-flex collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <a class="accordion-link accordion-button d-flex collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 
                 <img src="Images/Icons/eye-outline-with-lashes.png" alt="EyesIcon" width="70" height="70" >
                 <h5>EYES</h5>
@@ -207,7 +206,7 @@
 
             <h2 class="accordion-header">
 
-              <a class="accordion-link d-flex  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
+              <a class="accordion-link accordion-button d-flex collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
 
                 <img src="Images/Icons/lips.png" alt="LipsIcon" width="70" height="70" >
                 <h5>LIPS</h5>
@@ -236,7 +235,7 @@
 
             <h2 class="accordion-header">
 
-              <a class="accordion-link d-flex collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseOne">
+              <a class="accordion-link accordion-button d-flex collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseOne">
 
                 <img src="Images/Icons/face.png" alt="FaceIcon" width="70" height="70" >
                 <h5>FACE</h5>
@@ -387,90 +386,6 @@
 
           </div>
 
-      <div id="Carousel" class="carousel slide">
-
-  <div class="carousel-indicators">
-
-    <button type="button" data-bs-target="#Carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-
-    <button type="button" data-bs-target="#Carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-
-    <button type="button" data-bs-target="#Carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-
-  </div>
-
-  <div class="carousel-inner">
-
-    <div class="carousel-item active">
-
-      <div class="overlay"></div>
-
-      <img src="Images/LipstickPanel.png" class="d-block w-100" alt="...">
-
-      <div class="carousel-caption d-none d-md-block">
-
-        <h5>First slide label</h5>
-
-        <p>Some representative placeholder content for the first slide.</p>
-
-      </div>
-
-    </div>
-
-    <div class="carousel-item">
-
-      <div class="overlay"></div>
-
-      <img src="Images/FoundationPanel.png" class="d-block w-100" alt="...">
-
-      <div class="carousel-caption d-none d-md-block">
-
-        <h5>Second slide label</h5>
-
-        <p>Some representative placeholder content for the second slide.</p>
-
-      </div>
-
-    </div>
-
-    <div class="carousel-item">
-
-      <div class="overlay"></div>
-
-      <img src="Images/TonerPanel.png" class="d-block w-100" alt="...">
-
-      <div class="carousel-caption d-none d-md-block">
-
-        <h5>Third slide label</h5>
-
-        <p>Some representative placeholder content for the third slide.</p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <button class="carousel-control-prev" type="button" data-bs-target="#Carousel" data-bs-slide="prev">
-
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-
-    <span class="visually-hidden">Next</span>
-
-  </button>
-  
-  <button class="carousel-control-next" type="button" data-bs-target="#Carousel" data-bs-slide="next">
-
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-
-    <span class="visually-hidden">Previous</span>
-
-  </button>
-
-</div>
-
-    <div class="container justify-content-between border-0 shadow-none">
-
 <!--product grid  -->
     <br><section class="product-grid-3">
 
@@ -478,40 +393,49 @@
          <div class="product-grid-box product-grid-box1">
 
             <!-- img -->
-             <img src="Images/ex1.jpg"/>
+             <a href="#">
+              <div class="overlay"></div>
+             <img src="Images/ex1.jpg" class="img-fluid">
 
              <!-- Itext -->
               <div class="product-grid-text">
-                <strong> Natureal Green</strong>
-                <span>Face Products </span>
-                <a href="#">Shop Now</a>
+                <h3>Beauty & Carts</h3>
+                <p> Face</p>
+                <a href="#">Shop Now
               </div>
+              </a>
          </div>
 
-         <div class="product-grid-box product-grid-box2">
+         <div class="product-grid-box product-grid-box2" >
 
             <!-- img -->
-             <img src="Images/ex2.jpg"/>
-
-             <!-- Itext -->
-              <div class="product-grid-text">
-                <strong> Natureal Green</strong>
-                <span>Lip Products </span>
-                <a href="#">Shop Now</a>
-              </div>
+            <a href="#">
+              <div class="overlay"></div>
+              <img src="Images/ex2.jpg" class="img-fluid">
+ 
+              <!-- Itext -->
+               <div class="product-grid-text">
+                 <h3>Beauty & Carts</h3>
+                 <p> Eyes</p>
+                 <a href="#">Shop Now
+               </div>
+               </a>
          </div>
 
          <div class="product-grid-box product-grid-box3">
 
             <!-- img -->
-             <img src="Images/ex3.jpg"/>
-
-             <!-- Itext -->
-              <div class="product-grid-text">
-                <strong> Natureal Green</strong>
-                <span>Eye Products </span>
-                <a href="#">Shop Now</a>
-              </div>
+            <a href="#">
+              <div class="overlay"></div>
+              <img src="Images/LipstickPanel.png" class="img-fluid">
+ 
+              <!-- Itext -->
+               <div class="product-grid-text">
+                 <h3>Beauty & Carts</h3>
+                 <p> Lips</p>
+                 <a href="#">Shop Now
+               </div>
+               </a>
          </div>
     </section>
 
@@ -536,7 +460,7 @@
         <div class="all-product-box lip">
             <!-- img -->
             <br><a href="#" class="all-product-img">
-                <img src="Images/Products/Lips/lipstick1.png" alt="">
+                <img src="Images/Products/Lips/lipstick1.png" class="img-fluid" alt="">
                 <span>Lip Make-up</span>
             </a>
             <!-- text -->
@@ -550,7 +474,7 @@
         <div class="all-product-box lip's">
           <!-- img -->
           <br><a href="#" class="all-product-img">
-              <img src="Images/Products/Lips/lipstick2.png" alt="">
+              <img src="Images/Products/Lips/lipstick2.png" class="img-fluid" alt="">
               <span>Lip Make-up</span>
           </a>
           <!-- text -->
@@ -564,7 +488,7 @@
       <div class="all-product-box lip">
         <!-- img -->
         <br><a href="#" class="all-product-img">
-            <img src="Images/Products/Lips/lipstick3.png" alt="">
+            <img src="Images/Products/Lips/lipstick3.png" class="img-fluid" alt="">
             <span>Lip Make-up</span>
         </a>
         <!-- text -->
@@ -578,7 +502,7 @@
     <div class="all-product-box lip">
       <!-- img -->
       <br><a href="#" class="all-product-img">
-          <img src="Images/Products/Lips/lipstick4.png" alt="">
+          <img src="Images/Products/Lips/lipstick4.png" class="img-fluid" alt="">
           <span>Lip Make-up</span>
       </a>
       <!-- text5 -->
@@ -592,7 +516,7 @@
   <div class="all-product-box lip">
     <!-- img -->
     <br><a href="#" class="all-product-img">
-        <img src="Images/Products/Lips/liptint1.png" alt="">
+        <img src="Images/Products/Lips/liptint1.png" class="img-fluid" alt="">
         <span>Lip Make-up</span>
     </a>
     <!-- text -->
@@ -606,7 +530,7 @@
   <div class="all-product-box lip">
     <!-- img -->
     <br><a href="#" class="all-product-img">
-        <img src="Images/Products/Lips/liptint2.png" alt="">
+        <img src="Images/Products/Lips/liptint2.png" class="img-fluid" alt="">
         <span>Lip Make-Up</span>
     </a>
     <!-- text -->
@@ -620,7 +544,7 @@
   <div class="all-product-box lip">
     <!-- img -->
     <br><a href="#" class="all-product-img">
-        <img src="Images/Products/Lips/liptint3.png" alt="">
+        <img src="Images/Products/Lips/liptint3.png" class="img-fluid" alt="">
         <span>Lip Make-Up</span>
     </a>
     <!-- text -->
@@ -634,7 +558,7 @@
   <div class="all-product-box lip">
     <!-- img -->
     <br><a href="#" class="all-product-img">
-        <img src="Images/Products/Lips/liptint4.png" alt="">
+        <img src="Images/Products/Lips/liptint4.png"  alt="">
         <span>Lip Make-Up</span>
     </a>
     <!-- text -->
@@ -888,7 +812,7 @@
 
      <!-- jQuery -->
       <script src="js/jquery-3.7.1.js"></script>
-     <!--Sript --> 
+     <!--Script --> 
      <script>
         // fiter-link-active
         var selector = '.all-p-heading li'
@@ -993,7 +917,7 @@
         <div class="d-sm-flex justify-content-between py-1 text-light">
           <h6 class="reserves d-flex justify-content-between">© 2024, Beauty & Carts . All rights reserved.</h6>
           <p>
-              <a href="#" class="text-light text-decoration-none pe-4">Terms of use</a>
+              <a href="TermsAndConditions.html" class="text-light text-decoration-none pe-4">Terms of use</a>
               <a href="#" class="text-light text-decoration-none"> Privacy policy</a>
           </p>
       </div>
